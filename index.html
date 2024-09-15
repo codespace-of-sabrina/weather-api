@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Wetter-API</h1>
+    <form id="wetterForm">
+        <label for="ort">Ort eingeben:</label>
+        <input type="text" id="ort" name="ort" required>
+        <p id="italic">Zum Beispiel: "New York"</p>
+        <button type="submit">Wetter anzeigen</button>
+        <br>
+        <p id="italic">Hinweis: maximal 60 Anfragen pro Minute möglich</p>
+    </form>
+</div>
+
+    <div id="wetterErgebnis"></div>
+
+    <script src="wetter.js"></script>
+</body>
+</html>
